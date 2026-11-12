@@ -1,0 +1,15 @@
+Thumbs.db
+desktop.ini
+*.laccdb
+*.tmp
+*.temp
+*.bak
+*.log
+*.iso
+*.img
+*.exe
+*.msi
+__pycache__/
+node_modules/
+.vscode/
+.vs/

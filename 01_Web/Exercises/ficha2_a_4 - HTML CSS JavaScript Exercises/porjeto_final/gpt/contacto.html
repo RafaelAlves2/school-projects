@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>FashionStyle - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FashionStyle</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulário de Contacto</h2>
+        <form onsubmit="return validarFormulario()">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Nome: <input type="text" required autofocus></label><br><br>
+                <label>Email: <input type="email" required></label><br><br>
+                <label>Idade: <input type="number" min="0"></label><br><br>
+                <label>Password: <input type="password" required></label><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferências</legend>
+                <label><input type="checkbox"> Quero receber promoções</label><br>
+                <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 FashionStyle. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

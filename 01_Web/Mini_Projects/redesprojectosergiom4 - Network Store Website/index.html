@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerHub - A Sua Loja de Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">SneakerHub</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Início</a></li>
+                <li class="nav-item"><a href="colecao.html" class="nav-link">Coleção</a></li>
+                <li class="nav-item"><a href="promocoes.html" class="nav-link">Promoções</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item">
+                    <a href="carrinho.html" class="nav-link carrinho-link">
+                        Carrinho <span id="contador-carrinho">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Os Melhores Sneakers do Mercado</h1>
+            <p>Descubra a nossa coleção exclusiva de sneakers das melhores marcas</p>
+            <a href="colecao.html" class="btn-primary">Ver Coleção</a>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <div class="container">
+            <h2 class="section-title">Destaques</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop" alt="Nike Air Max 270">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Air Max 270</h3>
+                        <p class="produto-preco">€129,99</p>
+                        <button class="btn-adicionar" data-id="1" data-nome="Air Max 270" data-preco="129.99">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop" alt="Reebok Classic Leather">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Classic Leather</h3>
+                        <p class="produto-preco">€89,99</p>
+                        <button class="btn-adicionar" data-id="2" data-nome="Classic Leather" data-preco="89.99">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=400&h=400&fit=crop" alt="Adidas Ultra Boost">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Ultra Boost</h3>
+                        <p class="produto-preco">€159,99</p>
+                        <button class="btn-adicionar" data-id="3" data-nome="Ultra Boost" data-preco="159.99">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promocoes">
+        <div class="container">
+            <h2 class="section-title">Promoções da Semana</h2>
+            <div class="produtos-grid">
+                <div class="produto-card promocao">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop" alt="Vans Old Skool">
+                        <span class="promocao-badge">-20%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Old Skool</h3>
+                        <p class="produto-preco-antigo">€79,99</p>
+                        <p class="produto-preco">€63,99</p>
+                        <button class="btn-adicionar" data-id="4" data-nome="Old Skool" data-preco="63.99">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card promocao">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=400&h=400&fit=crop" alt="Converse Chuck Taylor">
+                        <span class="promocao-badge">-15%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Chuck Taylor</h3>
+                        <p class="produto-preco-antigo">€65,00</p>
+                        <p class="produto-preco">€55,25</p>
+                        <button class="btn-adicionar" data-id="5" data-nome="Chuck Taylor" data-preco="55.25">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="seletor-cores">
+        <h3>Alterar Cor de Fundo:</h3>
+        <div class="cores-opcoes">
+            <button class="cor-btn" data-cor="#f5f5f5"></button>
+            <button class="cor-btn" data-cor="#e8f4f1"></button>
+            <button class="cor-btn" data-cor="#f0f0f0"></button>
+            <button class="cor-btn" data-cor="#ffffff"></button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SneakerHub</h3>
+                    <p>A sua loja de confiança para os melhores sneakers do mercado.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="colecao.html">Coleção</a></li>
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p>Email: info@sneakerhub.pt</p>
+                    <p>Telefone: +351 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SneakerHub. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

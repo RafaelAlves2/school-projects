@@ -1,0 +1,25 @@
+=====================================
+SCHOOL PROJECTS PORTFOLIO
+=====================================
+
+Author:
+Rafael Alexandre da Costa Alves
+
+Course:
+Professional Course in Computer Systems Management and Programming
+
+Purpose:
+Preserve and showcase school projects.
+
+Languages:
+HTML
+CSS
+JavaScript
+PHP
+SQL
+
+Software:
+Cisco Packet Tracer
+Microsoft Office
+Microsoft Access
+

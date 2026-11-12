@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Email_2.css">
+    <link rel="shortcut icon" href="log.png" type="image/x-icon">
+    <title>Registo - ByteFit</title>
+</head>
+<body>
+    <div class="form-container">
+        <fieldset class="main-fieldset">
+            <legend>Registo</legend>
+            <form action="Loja.html" method="post" class="registration-form">
+                <fieldset class="welcome-section">
+                    <h1>Bem-vindo à ByteFit</h1>
+                    <p>A melhor loja de roupa da minha casa</p>
+                </fieldset>
+
+                <div class="form-section">
+                    <h2>Dados Pessoais</h2>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" autofocus required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" min="0" max="70" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Dados de Acesso</h2>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-section">
+                    <h2>Género</h2>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="genero" value="masculino" required> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="feminino"> Feminino
+                        </label>
+                    </div>
+                </div>
+
+                <br>
+                
+                <div class="form-section">
+                    <h2>Roupas</h2>
+                    <div class="radio-group">
+                        <label>
+                            <input type="checkbox" name="genero" value="masculino" required> M
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genero" value="feminino"> L
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genero" value="feminino"> P
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genero" value="feminino"> S
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genero" value="feminino"> XL
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genero" value="feminino"> XXL
+                        </label>
+                        <label>
+                            <input type="checkbox" name="genero" value="feminino"> XXL
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Enviar</button>
+                    <a href="Loja.html" class="cancel-link">Cancelar</a>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

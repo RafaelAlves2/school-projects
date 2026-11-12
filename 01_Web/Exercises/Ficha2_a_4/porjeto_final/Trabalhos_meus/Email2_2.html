@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de registo da ByteFit - A melhor loja de roupa">
+    <link rel="stylesheet" href="Email2_2.css">
+    <link rel="shortcut icon" href="log.png" type="image/x-icon">
+    <title>Registo - ByteFit</title>
+</head>
+<body>
+    <main class="form-container">
+        <fieldset class="main-fieldset">
+            <legend><h2>Registo</h2></legend>
+            <form action="Loja.html" method="post" class="registration-form" novalidate>
+                <fieldset class="welcome-section">
+                    <h1>Bem-vindo à ByteFit</h1>
+                    <p>A melhor loja de roupa da minha casa</p>
+                </fieldset>
+                
+                <div class="form-section">
+                    <h3>Dados de Acesso</h3>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="exemplo@email.com" autocomplete="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required
+                               minlength="8" autocomplete="new-password"
+                               placeholder="Mínimo 8 caracteres">
+                    </div>
+                    
+                    <div class="form-links">
+                        <a href="https://mail.google.com" aria-label="Recuperar password">Esqueceu a sua password?</a>
+                        <a href="Email.html" aria-label="Criar nova conta de email">Criar email</a>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Enviar</button>
+                    <a href="Loja.html" class="cancel-link" role="button">Cancelar</a>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>

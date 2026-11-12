@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #0e6971;
+    --secondary-color: #f8f9fa;
+    --accent-color: #ff6b35;
+    --text-color: #333;
+    --border-color: #ddd;
+    --error-color: #dc3545;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.main-fieldset {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+.welcome-section {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    margin: 0 0 15px 0;
+}
+
+.welcome-section p {
+    color: var(--text-color);
+    margin: 0;
+    font-style: italic;
+}
+
+/* Form Elements */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(14, 105, 113, 0.2);
+}
+
+input::placeholder {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Links Section */
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 25px;
+}
+
+.form-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: var(--transition);
+    padding: 4px 0;
+}
+
+.form-links a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: var(--transition);
+    flex: 1;
+}
+
+.submit-btn:hover {
+    background-color: #0a5358;
+    transform: translateY(-2px);
+}
+
+.cancel-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    flex: 1;
+}
+
+.cancel-link:hover {
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .main-fieldset {
+        padding: 15px;
+    }
+    
+    .form-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .submit-btn, .cancel-link {
+        width: 100%;
+    }
+    
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px;
+    }
+}

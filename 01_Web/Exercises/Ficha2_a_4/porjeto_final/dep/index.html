@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Elegante - Loja de Roupas Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="imagens/logo.png" alt="Moda Elegante">
+                    <span>ModaElegante</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li>
+                            <a href="#" class="cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Coleção Outono/Inverno 2023</h1>
+                <h2>As melhores tendências para você</h2>
+                <h3>Até 50% de desconto</h3>
+                <h4>Frete grátis para todo o país</h4>
+                <p>Descubra as últimas tendências da moda com descontos exclusivos</p>
+                <a href="produtos.html" class="btn">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Destaques da Temporada</h2>
+            </div>
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagens/produto1.jpg" alt="Blazer Feminino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Blazer Elegante</h3>
+                        <span class="price">R$ 249,90 <span class="old-price">R$ 349,90</span></span>
+                        <a href="#" class="btn" onclick="addToCart('Blazer Elegante', 249.90)">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagens/produto2.jpg" alt="Camisa Social">
+                    </div>
+                    <div class="product-info">
+                        <h3>Camisa Social Masculina</h3>
+                        <span class="price">R$ 129,90 <span class="old-price">R$ 179,90</span></span>
+                        <a href="#" class="btn" onclick="addToCart('Camisa Social', 129.90)">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <h2>Conheça Nossa Coleção</h2>
+            <video width="100%" controls poster="imagens/video-thumb.jpg">
+                <source src="https://example.com/video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <h2>Sobre a Moda Elegante</h2>
+            <p>Fundada em 2010, a Moda Elegante se tornou referência em moda premium no Brasil.</p>
+            <ul>
+                <li>+10 anos no mercado</li>
+                <li>+50.000 clientes satisfeitos</li>
+                <li>Produtos de alta qualidade</li>
+            </ul>
+            <a href="sobre.html" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Conteúdo do rodapé igual nas outras páginas -->
+            </div>
+        </div>
+    </footer>
+
+    <audio autoplay loop>
+        <source src="audio/background.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

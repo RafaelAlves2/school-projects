@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SneakerHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">SneakerHub</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="colecao.html" class="nav-link">Coleção</a></li>
+                <li class="nav-item"><a href="promocoes.html" class="nav-link">Promoções</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link active">Login</a></li>
+                <li class="nav-item">
+                    <a href="carrinho.html" class="nav-link carrinho-link">
+                        Carrinho <span id="contador-carrinho">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Login / Registo</h1>
+            <p>Aceda à sua conta ou crie uma nova</p>
+        </div>
+    </section>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="registro">Registo</button>
+                </div>
+
+                <div class="auth-form active" id="login-form">
+                    <h2>Login na Sua Conta</h2>
+                    <form id="form-login">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Entrar</button>
+                    </form>
+                </div>
+
+                <div class="auth-form" id="registro-form">
+                    <h2>Criar Nova Conta</h2>
+                    <form id="form-registro">
+                        <div class="form-group">
+                            <label for="reg-nome">Nome Completo</label>
+                            <input type="text" id="reg-nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">Password</label>
+                            <input type="password" id="reg-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-confirm-password">Confirmar Password</label>
+                            <input type="password" id="reg-confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Criar Conta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="seletor-cores">
+        <h3>Alterar Cor de Fundo:</h3>
+        <div class="cores-opcoes">
+            <button class="cor-btn" data-cor="#f5f5f5"></button>
+            <button class="cor-btn" data-cor="#e8f4f1"></button>
+            <button class="cor-btn" data-cor="#f0f0f0"></button>
+            <button class="cor-btn" data-cor="#ffffff"></button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SneakerHub</h3>
+                    <p>A sua loja de confiança para os melhores sneakers do mercado.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="colecao.html">Coleção</a></li>
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p>Email: info@sneakerhub.pt</p>
+                    <p>Telefone: +351 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SneakerHub. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

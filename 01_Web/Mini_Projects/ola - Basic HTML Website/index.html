@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site completo com todos elementos HTML">
+    <meta name="keywords" content="HTML, site completo, exemplo">
+    <meta name="author" content="Seu Nome">
+    <title>Site Completo HTML</title>
+    <base href="https://exemplo.com/" target="_blank">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos mínimos para organização visual */
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header, footer, section, article, aside, nav { margin: 10px 0; padding: 15px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <!-- Elementos de Cabeçalho -->
+    <header>
+        <h1>Site Completo HTML</h1>
+        <h2>Subtítulo do Site</h2>
+        <h3>Terceiro Nível</h3>
+        <h4>Quarto Nível</h4>
+        <h5>Quinto Nível</h5>
+        <h6>Sexto Nível</h6>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#midia">Mídia</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#formularios">Formulários</a></li>
+                <li><a href="#outros">Outros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>Elementos de Texto</h2>
+                <p>Parágrafo normal com <strong>texto forte</strong>, <em>ênfase</em>, <small>texto pequeno</small>, 
+                <mark>texto marcado</mark>, <del>texto removido</del>, <ins>texto inserido</ins>, 
+                <sub>subscrito</sub> e <sup>sobrescrito</sup>.</p>
+                
+                <blockquote cite="https://exemplo.com">
+                    Citação em bloco com atributo de citação.
+                    <cite>- Autor da Citação</cite>
+                </blockquote>
+                
+                <pre>
+Texto pré-formatado
+    com   espaçamento
+        preservado
+                </pre>
+                
+                <code>Código: console.log("Hello World");</code><br>
+                <kbd>Tecla: Ctrl+S</kbd><br>
+                <samp>Saída de programa: Hello World</samp><br>
+                <var>Variável: x = 5;</var><br>
+                <time datetime="2023-12-25">Natal 2023</time>
+                
+                <p>Texto com <abbr title="HyperText Markup Language">HTML</abbr> abreviado.</p>
+                
+                <address>
+                    Escrito por <a href="mailto:exemplo@email.com">João Silva</a>.<br>
+                    Visite-nos:<br>
+                    Exemplo.com<br>
+                    Caixa Postal 123, Cidade<br>
+                    Brasil
+                </address>
+                
+                <bdo dir="rtl">Texto invertido</bdo>
+            </article>
+            
+            <aside>
+                <h3>Conteúdo Relacionado</h3>
+                <p>Informações adicionais ou links relacionados ao conteúdo principal.</p>
+            </aside>
+        </section>
+
+        <section id="midia">
+            <h2>Elementos de Mídia</h2>
+            
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="Imagem de exemplo" width="400" height="200">
+                <figcaption>Figura 1: Imagem de exemplo com legenda</figcaption>
+            </figure>
+            
+            <picture>
+                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x400">
+                <source media="(min-width: 400px)" srcset="https://via.placeholder.com/400x200">
+                <img src="https://via.placeholder.com/200x100" alt="Imagem responsiva">
+            </picture>
+            
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            
+            <embed type="image/jpg" src="image.jpg" width="300" height="200">
+            <object data="flashmovie.swf" width="400" height="300"></object>
+            
+            <canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+            <script>
+                var c = document.getElementById("meuCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 150, 75);
+            </script>
+            
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </section>
+
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            
+            <table>
+                <caption>Tabela de Exemplo</caption>
+                <colgroup>
+                    <col span="2" style="background-color: #f2f2f2">
+                    <col style="background-color: #ddd">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João Silva</td>
+                        <td>joao@exemplo.com</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Souza</td>
+                        <td>maria@exemplo.com</td>
+                        <td>25</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="formularios">
+            <h2>Formulários Complexos</h2>
+            
+            <form action="/action_page.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="email@exemplo.com"><br><br>
+                    
+                    <label for="senha">Senha (8-20 caracteres):</label>
+                    <input type="password" id="senha" name="senha" minlength="8" maxlength="20" required><br><br>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                           placeholder="123-456-7890"><br><br>
+                    
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="data" name="data"><br><br>
+                    
+                    <label for="cor">Cor favorita:</label>
+                    <input type="color" id="cor" name="cor" value="#ff0000"><br><br>
+                    
+                    <label for="idade">Idade (18-100):</label>
+                    <input type="number" id="idade" name="idade" min="18" max="100"><br><br>
+                    
+                    <label for="site">Seu site:</label>
+                    <input type="url" id="site" name="site" placeholder="https://exemplo.com"><br><br>
+                    
+                    <label for="arquivo">Envie seu arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx"><br><br>
+                    
+                    <label for="volume">Volume (0-100):</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" step="5" value="50"><br><br>
+                    
+                    <label for="pesquisa">Pesquisa:</label>
+                    <input type="search" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui..."><br><br>
+                    
+                    <label for="hora">Hora preferida:</label>
+                    <input type="time" id="hora" name="hora"><br><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Opções</legend>
+                    
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <optgroup label="Américas">
+                            <option value="br">Brasil</option>
+                            <option value="us">Estados Unidos</option>
+                        </optgroup>
+                        <optgroup label="Europa">
+                            <option value="pt">Portugal</option>
+                            <option value="es">Espanha</option>
+                        </optgroup>
+                    </select><br><br>
+                    
+                    <label for="carros">Carros favoritos:</label>
+                    <select id="carros" name="carros" multiple size="4">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select><br><br>
+                    
+                    <label>Gênero:</label><br>
+                    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label><br>
+                    
+                    <label>Interesses:</label><br>
+                    <input type="checkbox" id="html" name="interesse" value="html" checked>
+                    <label for="html">HTML</label><br>
+                    <input type="checkbox" id="css" name="interesse" value="css">
+                    <label for="css">CSS</label><br>
+                    <input type="checkbox" id="js" name="interesse" value="javascript">
+                    <label for="js">JavaScript</label><br><br>
+                    
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" 
+                              placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+                    
+                    <label for="navegador">Escolha um navegador:</label>
+                    <input list="navegadores" id="navegador" name="navegador">
+                    <datalist id="navegadores">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Edge">
+                        <option value="Safari">
+                        <option value="Opera">
+                    </datalist><br><br>
+                    
+                    <button type="button" onclick="alert('Botão clicado!')">Botão Simples</button>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="outros">
+            <h2>Outros Elementos</h2>
+            
+            <details>
+                <summary>Clique para expandir</summary>
+                <p>Conteúdo detalhado que fica oculto até que o usuário clique no resumo.</p>
+            </details>
+            
+            <dialog open>Esta é uma caixa de diálogo aberta</dialog>
+            
+            <progress value="70" max="100"></progress>
+            
+            <meter value="0.6" min="0" max="1">60%</meter>
+            
+            <template>
+                <h3>Este é um template</h3>
+                <p>Conteúdo que não será renderizado até ser ativado por JavaScript.</p>
+            </template>
+            
+            <div contenteditable="true">Este é um conteúdo editável pelo usuário.</div>
+            
+            <p>Texto normal com <span style="color: red;">span vermelho</span>.</p>
+            
+            <div style="background-color: #f0f0f0; padding: 10px;">
+                <p>Divisão genérica com estilo inline.</p>
+            </div>
+            
+            <hr>
+            
+            <p>Texto antes do rodapé.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Site Completo HTML. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+        
+        <ul>
+            <li><a href="politica.html">Política de Privacidade</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="mapa.html">Mapa do Site</a></li>
+        </ul>
+        
+        <p>
+            <a href="#top">Voltar ao topo</a> | 
+            <a href="javascript:void(0)" onclick="alert('Link com JavaScript')">Link com JS</a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // JavaScript simples para demonstração
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Documento carregado');
+        });
+        
+        function mostrarAlerta() {
+            alert('Função JavaScript executada!');
+        }
+    </script>
+    
+    <noscript>
+        <p>Seu navegador não suporta JavaScript ou está desativado.</p>
+    </noscript>
+</body>
+</html>

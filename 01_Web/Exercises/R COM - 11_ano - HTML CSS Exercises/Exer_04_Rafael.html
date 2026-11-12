@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Posicionamento com CSS</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      position: relative;
+    }
+
+    .esqcima {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .esqbaixo {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+    .dircima {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+
+    .dirbaixo {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+    p {
+      margin: 5px;
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="esqcima">
+    <p>Esquerda em Cima</p>
+  </div>
+
+  <div class="esqbaixo">
+    <p>Esquerda em Baixo</p>
+  </div>
+
+  <div class="dircima">
+    <p>Direita em Cima</p>
+  </div>
+
+  <div class="dirbaixo">
+    <p>Direita em Baixo</p>
+  </div>
+</body>
+</html>

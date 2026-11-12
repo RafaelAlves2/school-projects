@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabalho_pratico_css.css">
+    <title>Trabalho Prático 1</title>
+</head>
+<body>
+    <div class="formulario">
+        <form action="Processamento.php" method="POST">
+
+            <label for="nome">Seu Nome completo: </label>
+            <input type="text" name="nome"><p></p>
+            <label for="noticia"> Título da sua notícia: </label>
+            <input type="text" name="noticia"><p></p>
+            <label for="subtitulo"> Subtitulo da sua notícia: </label>
+            <input type="text" name="subtitulo"><p></p>
+            <label for="corpo"> Corpo da sua notícia: </label>
+            <input type="text" name="corpo"><p></p>
+            <label for="data"> Data de Inserção: </label> 
+            <input type="date" name="data"><p></p>
+            <label for="publicada"> Data de publicação</label>
+            <input type="date" name="publicada"><p></p>
+            <label for="IP"> Coloque seu IP: </label>
+            <input type="text" name="IP"><p></p>
+            <button type="submit" name="enviar"> Enviar noticia </button>
+            <button type="reset"> Apagar formulário</button>
+        </form>
+    </div>
+</body>
+</html>

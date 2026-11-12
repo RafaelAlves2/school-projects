@@ -1,0 +1,69 @@
+
+body {
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4977a4;
+    border-bottom: 1px solid #893939;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: oklab(36.937% -0.02019 -0.16674);
+    font-weight: normal;
+}
+
+.menu li a:hover {
+    background-color: #aeb7c0;
+}
+
+
+section {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+}
+
+article h1 {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+article p {
+    text-align: justify;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4f5b66;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+footer h1 {
+    font-size: 13px;
+    margin: 0 0 5px 0;
+}

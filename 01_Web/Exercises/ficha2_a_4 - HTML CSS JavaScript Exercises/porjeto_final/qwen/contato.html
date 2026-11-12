@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Moda Moderna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <header class="header">
+    <div class="logo">ModaModerna</div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Formulário -->
+  <section class="contact">
+    <h2>Fale Conosco</h2>
+    <form id="contactForm">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required autofocus />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <label>Gênero:</label>
+        <div>
+          <input type="radio" id="masculino" name="genero" value="Masculino" />
+          <label for="masculino">Masculino</label>
+        </div>
+        <div>
+          <input type="radio" id="feminino" name="genero" value="Feminino" />
+          <label for="feminino">Feminino</label>
+        </div>
+        <div>
+          <input type="radio" id="outro" name="genero" value="Outro" checked />
+          <label for="outro">Outro</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesses</legend>
+        <div>
+          <input type="checkbox" id="novidades" name="interesses" value="Novidades" />
+          <label for="novidades">Receber novidades por email</label>
+        </div>
+        <div>
+          <input type="checkbox" id="ofertas" name="interesses" value="Ofertas" />
+          <label for="ofertas">Receber ofertas especiais</label>
+        </div>
+      </fieldset>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" min="12" max="100" />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="responseMessage"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ModaModerna. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

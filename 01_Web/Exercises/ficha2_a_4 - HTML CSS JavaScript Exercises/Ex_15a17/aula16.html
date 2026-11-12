@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+        <legend> Informações pessoais</legend>
+        Nome:<br>
+        <input type="text" name="nome" required autofocus maxlength="5"><br>
+        Senha:<br>
+        <input type="password" name="senha"><br>
+        Email:<br>
+        <input type="email" name="email" required"><br><br>
+        Time:<br>
+        <input type="radio" name="time" value="vasco" checked>Vasco<br>
+        <input type="radio" name="time" value="botafogo">Botafogo<br>
+        <input type="radio" name="time" value="fluminense">Fluminense<br>
+        <input type="radio" name="time" value="flamengo" >Flamengo<br>
+        <br>
+        Cores:<br>
+        <input type="checkbox" name="Cores" value="verde">Verde<br>
+        <input type="checkbox" name="Cores" value="Azul" checked>Azul<br>
+        <input type="checkbox" name="Cores" value="Preto">Preto<br>
+        <br>
+        <input type="submit" name="Btn-enviar" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>
